@@ -1,0 +1,129 @@
+#input{
+
+    & .add{
+
+        margin-block: 16px 40px;
+
+        & input{
+            font: var(--paragraph);
+            height: 44px;
+            margin-bottom: 16px;
+            background-color: var(--bg-secondary);
+            border:2px solid var(--border-primary);
+            border-radius: 12px;
+            padding-left: 16px;
+        }
+
+        & input::placeholder {
+            color: var(--content-tertiary);
+        }
+
+        & input:hover{
+            color: var(--content-tertiary);
+            border-color: var(--border-secondary);
+        }
+        
+        & input:focus{
+            border-color: var(--color-brand);
+            outline: none;
+            color: var(--content-primary);
+        }
+
+        & button{
+            font: var(--paragraph);
+            height: 44px;
+            margin-bottom: 16px;
+            background-color: var(--color-brand);
+            color: var(--always-white);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        & button:hover{
+            background-color: var(--color-brand-hover);
+        }
+    }
+
+    & .list{
+
+        align-items: center;
+        font: var(--paragraph);
+
+        background-color: var(--bg-secondary);
+        color: var(--content-secondary);
+        border: 1px solid var(--border-primary);
+        border-radius: 12px;
+
+        padding: 12px;
+        margin-bottom: 12px;
+
+        & input[type="checkbox"]{
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid var(--border-primary);
+            appearance: none;
+            background-color: var(--bg-secondary);
+            cursor: pointer;
+        }
+
+        & input[type="checkbox"]:hover{
+            border-color: var(--border-secondary);
+        }
+        
+        & input[type="checkbox"]:checked{
+            background-color: var(--color-brand); /* Cor do fundo ao marcar */
+            border: none;
+        }
+
+        & label{
+            font: var(--label);
+            color: var(--content-secondary);
+            padding-inline: 12px;
+        }
+
+        & img[src*="trash"]{
+            width: 16px;
+            height: 16px;
+            margin-left: auto;
+            cursor: pointer;
+        }
+    }
+
+    & .list:hover{
+        border-color: var(--border-secondary);
+    }
+
+    & .remove{
+        display: none;
+        align-items: center;
+        height: 44px;
+        font: var(--label);
+        color: var(--always-white);
+        background-color: var(--color-danger);
+        border-radius: 12px;
+
+        margin-top: 36px;
+        padding: 12px;
+
+        & span{
+            margin-left: 8px;
+        }
+
+        & img[src*="delete"]{
+            margin-left: auto;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (width >= 80em){
+    & .add{
+
+        & button{
+            margin-left: 16px;
+            border: 5px solid gold;
+        }
+    }
+}

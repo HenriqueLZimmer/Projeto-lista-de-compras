@@ -1,0 +1,15 @@
+#input{
+    margin-inline: 32px;
+}
+
+@media (width >= 80em){
+    #input{
+        margin-inline: 370px;
+        & .add{
+            align-items: center;
+            grid-template-columns: 2fr 1fr;
+
+            margin-block: 44px 40px;
+        }
+    }
+}
