@@ -1,0 +1,25 @@
+#arrow{
+    margin-top: 78px;
+    margin-left: 32px;
+    & img{
+        height: 16px;
+    }
+
+    & span{
+        font: var(--link);
+        color: var(--color-brand);
+    }
+
+    & h1{
+        margin-top: 16px;
+        font: var(--title);
+        color: var(--content-primary);
+    }
+}
+
+@media (width >= 80em){
+    #arrow{
+        margin-top: 62px;
+        margin-left: 369px;
+    }
+}
