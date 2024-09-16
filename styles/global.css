@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+:root{
+
+    /* Background color */
+    --bg-primary: #f4f5fb;
+    --bg-secondary: #ffffff;
+
+    /* Color */
+
+    --color-brand: #ca3884;
+    --color-brand-hover: #a52c6b;
+    --color-danger: #c93847;
+
+    /* Color Content */
+
+    --content-primary: #080b12;
+    --content-secondary: #374151;
+    --content-tertiary: #9CA3AF;
+    --always-white: #ffffff;
+
+    /* Border Color */
+
+    --border-primary: #d1d5db;
+    --border-secondary: #b9c2d0;
+
+    /* Fonte Family */
+
+    --ff-base: "Inter", sans-serif;
+
+    /* Fonte */
+
+    --title: 700 24px/2 var(--ff-base);
+    --label: 600 16px/20px var(--ff-base);
+    --paragraph: 500 16px/1.25 var(--ff-base);
+    --link: 500 14px/1 var(--ff-base);
+}
+
+.flex{
+    display: flex;
+}
