@@ -1,0 +1,18 @@
+header{
+    align-items: center;
+    justify-content: center;
+    padding-block: 8.33px;
+
+    & img{
+        width: 30.51px;
+        height: 23.33;
+        padding-right: 7px;
+    }
+
+    & span{
+        font-family: "Sora", sans-serif;
+        font-size: 26.67px;
+        font-weight: 700;
+        color: var(--content-secondary);
+    }
+}
